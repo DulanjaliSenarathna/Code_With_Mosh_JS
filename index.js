@@ -114,3 +114,8 @@ console.log('1' === 1 ); //not equal
 console.log(1==1);
 console.log('1'==1); //right side type automatically covert to left side type and then compare 
 console.log(true ==1);
+
+//Ternary Operator
+let point = 110;
+let type = point>100 ? 'gold' : 'silver';
+console.log(type);
