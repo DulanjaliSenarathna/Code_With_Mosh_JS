@@ -50,10 +50,17 @@ selectedColors[3] = '3'; //can be change the type of an object in the array
 
 console.log(selectedColors[3]);
 
-//functions
+//functions - perfoming a task
 function geet(pname, lname){
     console.log('Hello '+ pname + " "+lname);
 }
 
 geet("Dula","Sena");
 geet("Dil","Ige");
+
+//funtion - calculate the value
+function square(numb){
+    return numb*numb;
+}
+
+console.log(square(2));
