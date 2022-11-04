@@ -93,3 +93,15 @@ x = x-2 ;
 console.log(x);
 x -= 2;
 console.log(x);
+
+//comparison operators
+
+//relational
+console.log(x>1);
+console.log(x>=1);
+console.log(x<1);
+console.log(x<=1);
+
+//equality
+console.log(x===1);
+console.log(x !==1);
