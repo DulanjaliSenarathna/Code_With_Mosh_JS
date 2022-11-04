@@ -139,3 +139,25 @@ console.log('Approved ',eligibleForLoan);
 //NOT ! 
 let applicationRefuse = !eligibleForLoan;
 console.log('Refuse',applicationRefuse);
+
+//Logical Operators with Non-booleans
+//Falsy (false)
+//1. undefined
+//2. null
+//3. 0
+//4. false
+//5. ''
+//6. NaN
+
+//Anything that is not falsy => Truthy
+
+//false|| 2 => 2
+
+//short - circuiting = false || 'Dul' || 'Dil' => Dul (Checked first true value is answer. ignore all things after this.)
+
+let userColor = 'red';
+let defaultColor = 'blue';
+let currentColor = userColor || defaultColor;
+console.log(currentColor);
+//if ther userColor = undefined, then currentColor = blue;
+
