@@ -82,3 +82,14 @@ console.log(x);
 
 //decrment--
 console.log(x--);
+
+//Assignment operators
+x = x+5;
+console.log(x);
+x += 5;
+console.log(x);
+
+x = x-2 ;
+console.log(x);
+x -= 2;
+console.log(x);
