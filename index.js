@@ -41,3 +41,11 @@ person[selection]='Mary';
 
 
 console.log(person.name);
+
+//arrays
+let selectedColors = ['blue','green','red'];
+
+//can be change the array length later
+selectedColors[3] = '3'; //can be change the type of an object in the array
+
+console.log(selectedColors[3]);
