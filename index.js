@@ -15,3 +15,11 @@ let secName = "Dil";
 const interestRate = 5.0;
 //interestRate = 1; //can't be assign again, because the variable is constant.
 console.log(interestRate);
+
+//premitive data types
+let lastName = "Senarathna"; //string literal
+let age = 25; //number literal
+let isTrue = true; //boolean literal
+let cityName; //undefined (default) 
+let address = undefined; //undefined
+let phone = null; //null
