@@ -105,3 +105,12 @@ console.log(x<=1);
 //equality
 console.log(x===1);
 console.log(x !==1);
+
+//strict equality(type+value)
+console.log(1===1); //equal
+console.log('1' === 1 ); //not equal
+
+//lose equality(value)
+console.log(1==1);
+console.log('1'==1); //right side type automatically covert to left side type and then compare 
+console.log(true ==1);
