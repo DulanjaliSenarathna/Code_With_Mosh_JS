@@ -221,4 +221,23 @@ else{
     console.log('Good Evening!');
 }
 
+//Switch...case
+
+let role = 'admin';
+
+switch(role){
+    case 'admin' :
+        console.log("Admin");
+        break;
+    case 'moderator' :
+        console.log('Moderator');
+        break;
+    default : 
+        console.log('Other');
+}
+
+if (role === 'admin') console.log("Admin");
+else if (role === 'moderator') console.log("Moderator");
+else console.log("Other");
+
 
