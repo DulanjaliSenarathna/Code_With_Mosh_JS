@@ -187,6 +187,23 @@ console.log(myPermission);
 let message = (myPermission & readPermission) ? 'yes':'no';
 console.log(message);
 
+let s = (1 == true);
+console.log(s);
+
+//exercise
+let a = 'red';
+let b = 'blue';
+
+let temp;
+
+temp = a;
+a = b;
+b = temp;
+
+
+console.log(a);
+console.log(b);
+
 
 
 
