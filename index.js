@@ -161,3 +161,32 @@ let currentColor = userColor || defaultColor;
 console.log(currentColor);
 //if ther userColor = undefined, then currentColor = blue;
 
+//Bitwise Operators
+// 0 = 00000000
+// 1 = 00000001
+// 2 = 00000010
+// r = 00000011 //OR (r=result)
+// r = 00000000
+
+//read write execute
+// 00000100  - Read only
+// 00000110  - Read and Write
+// 00000111  - Read write and execute
+
+console.log(1|2); //Bitwise OR
+console.log(1&2); //Bitwise AND
+
+const readPermission = 4;
+const writePermission = 2;
+const executePermission = 1;
+let myPermission = 0;
+
+myPermission = myPermission | writePermission;
+console.log(myPermission);
+
+let message = (myPermission & readPermission) ? 'yes':'no';
+console.log(message);
+
+
+
+
