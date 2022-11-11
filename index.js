@@ -445,3 +445,22 @@ function showProperties(movie){
 }
 
 showProperties(movie);
+
+//Exercise 8- Sum of Multiples of 3 and 5
+
+let sum1 = 0;
+let sum2 = 0;
+function sum(limit){
+    for(let i=0; i<=limit;i++){
+    
+        if(i%3==0){
+            sum1 = sum1+i;
+        }else if(i%5==0){
+            sum2 = sum2+i;
+        }
+    }
+
+    console.log(sum1+sum2);
+}
+
+sum(12);
