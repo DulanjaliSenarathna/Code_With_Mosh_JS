@@ -301,4 +301,11 @@ for(let g in vehicles){
     console.log(g,vehicles[g]);
 }
 
+//for-of loop - iterates items in an array
+
+for(let vehi of vehicles){
+    console.log(vehi);
+}
+
+
 
