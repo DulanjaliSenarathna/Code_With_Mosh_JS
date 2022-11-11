@@ -411,3 +411,18 @@ function showNumbers(limit){
 
 showNumbers(10);
 
+//Exercise 6- Count Truthy
+
+let array = [10,0,20,2,'mm',undefined,NaN];
+
+function countTruthy(array){
+    let count=0;
+    for(let x of array){
+        if(x){ //no need to check (x !== 0)&&(x !== false)&&(x !== '')&&(x!== NaN)&&(typeof(x)!== undefined)&&(typeof(x)!=='null') because if condition check value inside paranthesis true or false.
+            count++;
+        }   
+    }
+    console.log(count);
+}
+
+countTruthy(array);
