@@ -190,7 +190,7 @@ console.log(message);
 let s = (1 == true);
 console.log(s);
 
-//exercise
+//exercise - swap numbers
 let a = 'red';
 let b = 'blue';
 
@@ -281,5 +281,24 @@ do{
 // missing increment statement in do while loop
 // for (let i=0; i>0 ; i++)
 
+//for - in loop
+
+//objects
+const car = {
+    numb:"g34",
+    color:"green"
+};
+
+for (let k in car){
+    console.log(k, car[k]);
+}
+
+//arrays
+
+const vehicles = ['car','bus'];
+
+for(let g in vehicles){
+    console.log(g,vehicles[g]);
+}
 
 
