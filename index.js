@@ -426,3 +426,22 @@ function countTruthy(array){
 }
 
 countTruthy(array);
+
+//Exercise 7- String Properties
+
+const movie = {
+    nameM : 'Krish',
+    year : 2004,
+    director: 'Dil'
+}
+
+function showProperties(movie){
+    for(let i in movie){
+        if(typeof movie[i] === 'string'){
+            console.log(i, movie[i]);
+        }
+        
+    }
+}
+
+showProperties(movie);
