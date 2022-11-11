@@ -273,3 +273,13 @@ do{
     if(j%2 !==0) console.log(j);
     j++;
 } while(j<=5);
+
+//infinite loop
+
+//missing increment statement in for loop
+// while (true){ }
+// missing increment statement in do while loop
+// for (let i=0; i>0 ; i++)
+
+
+
