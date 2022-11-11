@@ -307,5 +307,24 @@ for(let vehi of vehicles){
     console.log(vehi);
 }
 
+//break and continue
+let z=0;
+while(z<=10){
+    if(z==5){
+        break;
+    }
+    console.log(z);
+    z++;
+}
 
+let g=0;
+while(g<=10){
+    if(g%2==0){
+        g++;
+        continue;
+        
+    }
+    console.log(g);
+    g++;
+}
 
