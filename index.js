@@ -240,4 +240,21 @@ if (role === 'admin') console.log("Admin");
 else if (role === 'moderator') console.log("Moderator");
 else console.log("Other");
 
+//for loop
+
+for(let i=0; i<5 ; i++){
+    console.log('Hello');
+}
+//odd numbers
+for(let i=1; i<=5 ; i++){
+
+    if(i%2 !==0) console.log(i);
+}
+
+//odd numbers - reverse order
+
+for(let i=5; i>=1 ; i--){
+
+    if(i%2 !==0) console.log(i);
+}
 
