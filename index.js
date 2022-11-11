@@ -328,3 +328,18 @@ while(g<=10){
     g++;
 }
 
+//Exercise 1 - Max of Two Numbers
+
+function findMax(a,b){
+   return (a>b)? a:b;
+    
+}
+console.log(findMax(100,2));
+
+//Exercise 2 - Landscape or Portrait
+function isLandscape(width,height){
+    return (width>height)  // no need - ? true:false; explicitly - automatic brackets return true or false
+}
+
+console.log(isLandscape(200,4));
+
