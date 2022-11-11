@@ -343,3 +343,30 @@ function isLandscape(width,height){
 
 console.log(isLandscape(200,4));
 
+// Exercise 3- FizzBuzz
+
+//Divisable by 3 => Fizz
+//Divisable by 5 => Buzz
+//Divisable by both 3 and 5 => FizzBuzz
+//Not Divisable by 3 or 5 => input
+//Not a number => 'Not a number'
+
+function fizzBuzz(num){
+    if(typeof num !== 'number')
+        return 'Not a Number';
+    
+    if ((num%3 ==0) && (num%5 ==0))
+        return 'FizzBuzz';
+
+    if (num%3 ==0)
+        return 'Fizz';
+    
+    if(num%5 ==0)
+        return 'Buzz';
+    
+    else
+        return num;
+}
+
+console.log(fizzBuzz('bh'));
+
