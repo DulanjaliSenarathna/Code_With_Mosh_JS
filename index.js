@@ -464,3 +464,37 @@ function sum(limit){
 }
 
 sum(12);
+
+//Exercise 8-Grade
+
+const marks = [0,100,80];
+var summ = 0;
+
+function calculateGrade(){
+    
+    for(let i=0; i<marks.length;i++){
+       
+        summ = summ+marks[i];
+        var avg = (summ/marks.length);  
+    }
+    let grade = '';
+    if(avg<=59){
+        grade = 'F';
+    }
+    else if(avg>=60 && avg<=69){
+        grade = 'C';
+    }
+    else if(avg>=70 && avg<=79){
+        grade = 'D';
+    }
+    else if(avg>=80 && avg<=89){
+        grade = 'B';
+    }
+    else if(avg>=90 && avg<=100){
+        grade = 'A';
+    }
+    return grade;
+}
+
+console.log((calculateGrade(marks)))
+
