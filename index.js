@@ -539,3 +539,19 @@ function isPrime(number){
 }
 showPrime(5);
 
+//Object Basics
+
+const circle = {
+    radius : 1,
+    location : {
+        x : 1,
+        y : 1
+    },
+    isVisible : true,
+    draw : function(){
+        console.log('draw');
+    }
+}
+
+circle.draw(); //Method (If the function is a part of a object , it's called a method)
+
