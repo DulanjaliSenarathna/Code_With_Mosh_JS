@@ -516,3 +516,26 @@ function showStars(rows){
 
 showStars(5);
 
+//Exercise- Prime Numbers
+function showPrime(limit){
+
+    for(let number=2; number<=limit; number++){  //i=2; because the 1st prime number is 2
+
+        if(isPrime(number)){
+            console.log(number);
+        }
+    }
+   
+}
+
+function isPrime(number){
+   
+    for(let factor=2; factor<number;factor++){
+        if(number%factor ==0){
+            return false;
+        }
+    }
+    return true;
+}
+showPrime(5);
+
