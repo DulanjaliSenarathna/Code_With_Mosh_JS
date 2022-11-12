@@ -549,12 +549,12 @@ const circle = {
         y : 1
     },
     isVisible : true,
-    draw : function(){
+    draw1 : function(){
         console.log('draw');
     }
 }
 
-circle.draw(); //Method (If the function is a part of a object , it's called a method)
+circle.draw1(); //Method (If the function is a part of a object , it's called a method)
 
 //Factory Functions
 function createCircle(radius){
