@@ -584,3 +584,14 @@ function Circle(radius){
 
 const circlee = new Circle(2);
 
+//Dynamic Nature of Objects - can add or delete object properties
+
+const bus = { // const means can't reassign bus 
+    root : '122'
+}
+
+bus.busname = 'Mahi';
+bus.drive = function(){};
+
+console.log(bus);
+
