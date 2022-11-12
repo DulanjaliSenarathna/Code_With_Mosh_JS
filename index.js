@@ -556,7 +556,7 @@ const circle = {
 
 circle.draw1(); //Method (If the function is a part of a object , it's called a method)
 
-//Factory Functions
+//Factory Functions - use camel case naming convention
 function createCircle(radius){
     return{
         radius,
@@ -572,4 +572,15 @@ console.log(circle1);
 
 const circle2 = createCircle(5);
 console.log(circle2);
+
+//Constructor Functions - use Pascal case naming convention
+
+function Circle(radius){
+    this.radius = radius;
+    this.draw = function(){
+        console.log('something');
+    }
+}
+
+const circlee = new Circle(2);
 
