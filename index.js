@@ -74,7 +74,7 @@ console.log(x-y);
 console.log(x*y);
 console.log(x/y);
 console.log(x%y);
-console.log(x**y); //10, 20 power
+console.log(x**y); //10, 20 power (Exponentiation)
 
 //increment++
 console.log(x++);
@@ -541,6 +541,7 @@ showPrime(5);
 
 //Object Basics
 
+//OOP
 const circle = {
     radius : 1,
     location : {
@@ -554,4 +555,21 @@ const circle = {
 }
 
 circle.draw(); //Method (If the function is a part of a object , it's called a method)
+
+//Factory Functions
+function createCircle(radius){
+    return{
+        radius,
+        draw(){
+            console.log('drawing');
+        }
+    }
+
+}
+
+const circle1 = createCircle(1);
+console.log(circle1);
+
+const circle2 = createCircle(5);
+console.log(circle2);
 
