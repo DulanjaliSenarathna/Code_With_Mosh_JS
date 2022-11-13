@@ -595,3 +595,14 @@ bus.drive = function(){};
 
 console.log(bus);
 
+// Constructor Property
+
+let d = {} // let d = new Object(); Object is a built in constructor for create object
+
+//other built in constructors
+// new String(), new Number(), new Boolean()
+
+circlee.constructor; // constructor method object
+circle2.constructor; // factory method object
+
+
