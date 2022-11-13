@@ -605,4 +605,8 @@ let d = {} // let d = new Object(); Object is a built in constructor for create 
 circlee.constructor; // constructor method object
 circle2.constructor; // factory method object
 
+//Functions are Objects
+Circle.call({},1);
+Circle.apply({},[1,2,3]);
+
 
