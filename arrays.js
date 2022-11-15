@@ -20,4 +20,40 @@ console.log(numbers.lastIndexOf(1));
 console.log(numbers.indexOf(1) !== -1);
 console.log(numbers.includes(1));//simlest way to above 
 
+//Finding Elements (Reference Types)
+
+const courses = [
+    {id : 1, cname: 'maths'},
+    {id : 2, cname: 'commerce'}
+]
+
+//trying to use primitive element find method
+
+console.log(courses.includes({id : 1, cname: 'maths'})); //output false because of the these two objects are different from each other. because object is reference type. and this 2 objects in diffrent memory locations
+
+//correct way
+
+const result1 = courses.find(function(course){
+    return course.cname == 'maths';
+});
+
+console.log(result1); //return the complete course object
+
+const result2 = courses.find(function(course){
+    return course.cname == 'math';
+});
+
+console.log(result2); //return undefined when we try to serach element that are not in array
+
+//return serched result's index
+
+const result3= courses.findIndex(function(course){
+    return course.cname == 'commerce';
+});
+
+console.log(result3); 
+
+
+
+
 
