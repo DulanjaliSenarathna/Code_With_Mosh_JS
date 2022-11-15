@@ -669,6 +669,43 @@ for(let o of Object.entries(squre)){
 
 if('height' in squre) console.log('yes'); //output yes
 
+//Cloning an Object
+
+//Way 1.
+
+const squre1 = {
+    height : 25,
+    getWidth(){
+        console.log('width');
+    }
+};
+
+const another = {};
+for(let kkey in squre1){
+    another[kkey] = squre1[kkey];
+}
+
+console.log(another);
+another.getWidth();
+
+//onother way to do above
+//Way 1.
+
+const another1 = Object.assign({},squre1);
+console.log(another1); // copy squre1 object to new abject called anothe1
+
+//also we can copy object to exsisting object 
+const another2 = Object.assign({color2 : 'red'},squre1); //another2 object already have 1 property
+
+console.log(another2); 
+
+//Way 3. (simplest way)
+
+const another3 = {...squre1};
+console.log(another3);
+
+
+
 
 
 
