@@ -704,6 +704,26 @@ console.log(another2);
 const another3 = {...squre1};
 console.log(another3);
 
+//Exercise 1- Address Object
+//street
+//city
+//zipcode
+//showAddress(address)
+
+const address1 = {
+    street : '776/A',
+    city : 'Eheliyagoda',
+    zipcode : '70606'
+}
+
+function showAddress(address1){
+    for(let addres in address1){
+        console.log(addres,address1[addres]);
+    }
+}
+
+showAddress(address1);
+
 
 
 
