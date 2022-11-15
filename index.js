@@ -583,6 +583,7 @@ function Circle(radius){
 }
 
 const circlee = new Circle(2);
+console.log(circlee);
 
 //Dynamic Nature of Objects - can add or delete object properties
 
@@ -729,6 +730,56 @@ console.log(Math.random()); // add random numbers between 0 and 1
 console.log(Math.round(1.8)); //round up a number
 console.log(Math.max(2,8,6,9));
 console.log(Math.min(2,8,6,9));
+
+//Exercise 2- Factory and Constructor Functions
+
+//Factory - no parameters
+function addres(){
+    return{
+        street : 'a',
+        city :'b',
+        zipcode : '336'
+    }
+   
+}
+
+const address2 = addres();
+console.log(address2);
+
+//Factory - with parameters
+
+function addres1(street1,city1,zipcode1){
+    return{
+        street1 ,
+        city1,
+        zipcode1
+    }   
+}
+
+const address4 = addres1('110','Mal Mawatha','Nugegoda');
+console.log(address4);
+
+//Constructor - no parameters
+
+function Address(){
+    this.addres = 'a',
+    this.street = 'b',
+    this.zipcode = 'c'
+}
+
+const addres3 = new Address();
+console.log(addres3); 
+
+//Constructor - with parameters
+
+function Address(street2, city2,){
+    this.addres = 'a',
+    this.street = 'b',
+    this.zipcode = 'c'
+}
+
+const addres5 = new Address();
+console.log(addres3); 
 
 
 
