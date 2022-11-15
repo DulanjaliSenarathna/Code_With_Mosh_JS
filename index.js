@@ -894,6 +894,18 @@ const post1 = new Blog('my','dj','h',);
 
 console.log(post1);
 
+//Exercise 6- Price Range Object
+
+const priceRange = [
+    {label : '$' , tooltip : 'INEXPENSIVE', minPerPerson : 0 , maxPerPerson : 10},
+    {label : '$$' , tooltip : 'Moderate', minPerPerson : 11 , maxPerPerson : 20},
+    {label : '$$$' , tooltip : 'EXPENSIVE', minPerPerson : 21 , maxPerPerson : 30},
+]
+
+const restuarents = [
+    {averagePerPerson : 5}
+]
+
 
 
 
