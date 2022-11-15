@@ -863,6 +863,24 @@ console.log(now.toISOString());
 console.log(date1);
 console.log(date2);
 
+//Exercise 4- Blog Post Object
+
+//title , body, author, views, comments, comments - author, body , isLive
+
+const post = {
+    title : 'dula',
+    body : 'dil',
+    author : 'sena',
+    views : '2',
+    comments : [
+        { author: 'new', body : 'comment'},
+        { author: 'ss', body : 'wes'}
+    ],
+    isLive: true
+}
+
+console.log(post);
+
 
 
 
