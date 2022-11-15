@@ -75,8 +75,29 @@ console.log(first);
 numbers1.splice(2,1); //in this 2 is the index of we want to delete, 1= how many numbers should be delete from this index
 console.log(numbers1);
 
+//Emptying an Array
 
+let numb = [1,2,3,4,5,6,7]; // let use, because const don't let re-declared array
+let another = numb;
 
+//Way 1
 
+numb = [];
+//console.log(numb);//numb empty
+console.log(another); //not empty and same to original numb array
+
+//Way 2
+numb.length = 0;
+console.log(numb);
+
+//Way 3 (bad effect on perfomance when millions of objects)
+while(numb.length>0){
+    numb.pop();
+}
+console.log(numb);
+
+//Way 4 
+numb.splice(0,numb.length);
+console.log(numb);
 
 
