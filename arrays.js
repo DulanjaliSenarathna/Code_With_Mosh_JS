@@ -39,7 +39,7 @@ const result1 = courses.find(function(course){
 
 console.log(result1); //return the complete course object
 
-const result2 = courses.find(function(course){
+const result2 = courses.find(function(course){ //this function called 'predicure funtion'
     return course.cname == 'math';
 });
 
