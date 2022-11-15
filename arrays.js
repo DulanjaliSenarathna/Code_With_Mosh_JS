@@ -53,6 +53,29 @@ const result3= courses.findIndex(function(course){
 
 console.log(result3); 
 
+//Arrow function
+
+const result4 = courses.find(course => course.cname == 'commerce');
+console.log(result4);
+
+//Removing Elements
+const numbers1 = [3,4,2,4,6];
+
+//remove last
+const last = numbers1.pop();
+console.log(numbers1);
+console.log(last);
+
+//remove first element
+const first = numbers1.shift();
+console.log(numbers1);
+console.log(first);
+
+//remove middle 
+numbers1.splice(2,1); //in this 2 is the index of we want to delete, 1= how many numbers should be delete from this index
+console.log(numbers1);
+
+
 
 
 
