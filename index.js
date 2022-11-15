@@ -781,6 +781,37 @@ function Address(street2, city2,){
 const addres5 = new Address();
 console.log(addres3); 
 
+//String
+
+//string primitive
+const msg = '  This \nis my \'first message  ';
+
+//String object
+
+const othe = new String('other string');
+
+console.log(typeof msg);
+console.log(typeof othe);
+
+console.log(msg.length);
+console.log(msg[0]);
+console.log(msg[1]);
+console.log(msg.includes('my'));
+console.log(msg.startsWith('my'));
+console.log(msg.startsWith('This'));
+console.log(msg.endsWith('message'));
+console.log(msg.indexOf('my'));
+console.log(msg.replace('my','our')); //create new string and not effect on original mstring
+console.log(msg);
+console.log(msg.toUpperCase());
+console.log(msg.toLowerCase());
+console.log(msg.trim()); //remove spaces before and after the string
+console.log(msg.trimLeft());//remove spaces before the string
+console.log(msg.split(' ')); //get array and each word is a element
+
+
+
+
 
 
 
