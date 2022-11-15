@@ -140,6 +140,18 @@ console.log(neww);
 const copy1 = [...neww];
 console.log(copy1);
 
+// Iterating an Array
+
+const array = [1,8,6,5,7];
+
+for(let num of array){ // we can't get indexes
+    console.log(num);
+}
+
+array.forEach(function(num,index){ //we can get data and also and indexes
+    console.log(index,num);
+})
+
 
 
 
