@@ -871,7 +871,7 @@ const post = {
     title : 'dula',
     body : 'dil',
     author : 'sena',
-    views : '2',
+    views : 10,
     comments : [
         { author: 'new', body : 'comment'},
         { author: 'ss', body : 'wes'}
@@ -879,7 +879,21 @@ const post = {
     isLive: true
 }
 
-console.log(post);
+function Blog(title,body,author){ // no views and comments because still post is not publish
+
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    this.views = 0;
+    this.comments = [];
+    this.isLive = false;
+
+}
+
+const post1 = new Blog('my','dj','h',);
+
+console.log(post1);
+
 
 
 
