@@ -772,14 +772,14 @@ console.log(addres3);
 
 //Constructor - with parameters
 
-function Address(street2, city2,){
-    this.addres = 'a',
-    this.street = 'b',
-    this.zipcode = 'c'
+function Address(street2, city2, zipcode2){
+    this.street2 = street2,
+    this.city2 = city2,
+    this.zipcode2 = zipcode2
 }
 
-const addres5 = new Address();
-console.log(addres3); 
+const addres5 = new Address('d','e','we');
+console.log(addres5); 
 
 //String
 
@@ -808,6 +808,30 @@ console.log(msg.toLowerCase());
 console.log(msg.trim()); //remove spaces before and after the string
 console.log(msg.trimLeft());//remove spaces before the string
 console.log(msg.split(' ')); //get array and each word is a element
+
+//Exercise 3- Object Equality
+function Name(firstname, middle, lastname){
+    this.firstname = firstname,
+    this.middle = middle,
+    this.lastname= lastname
+}
+
+let name1= new Name('Sadujana road','milidduwa','galle');
+let name2 = new Name('Sadujana road','milidduwa','galle');
+let name3 = name1;
+
+function isEqual(name1,name2){
+return name1.firstname === name2.firstname && name1.middle === name2.middle && name1.lastname === name2.lastname;
+}
+
+function isSame(name1,name2){
+    return name1 === name2;
+}
+
+console.log(isEqual(name1,name2)); // properties are same
+console.log(isSame(name1,name2)); //two objects are not similar
+console.log(isSame(name1,name3)); 
+
 
 
 
