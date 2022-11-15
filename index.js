@@ -609,4 +609,37 @@ circle2.constructor; // factory method object
 Circle.call({},1);
 Circle.apply({},[1,2,3]);
 
+// Value vs Reference Types
+
+let e = 10;
+let f = e;
+
+e = 20; // in the console e = 20, f = 10;
+
+let h = {value: '10'};
+let k = h;
+
+h.value = '220'; // both values are 220
+
+let newnumber = 20;
+
+let number = 10;
+function increaseNo(number){
+    number++;
+}
+
+increaseNo(number);
+console.log(number); //output 10 
+
+let numberob = {value:10};
+function increaseNo(numberob){
+    numberob.value++;
+}
+
+increaseNo(numberob);
+console.log(numberob); //output value:11
+
+
+
+
 
