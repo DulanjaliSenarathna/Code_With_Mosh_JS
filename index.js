@@ -639,6 +639,35 @@ function increaseNo(numberob){
 increaseNo(numberob);
 console.log(numberob); //output value:11
 
+//Enumerating Properties of an Object
+
+const squre = {
+    height : 25,
+    getWidth(){
+        console.log('width');
+    }
+};
+
+for(let key in squre){
+    console.log(key, squre[key]);
+}
+
+//for (let h of square ){
+   // console.log(h); //Uncaught TypeError: square is not iterable
+    
+//}
+
+//instead of above for of loop we can use,
+
+for (let h of Object.keys(squre) ){ //convert squre to an array and then iterable and get keys of object
+    console.log(h);   
+}
+
+for(let o of Object.entries(squre)){
+    console.log(o) // get key:value pairs
+}
+
+if('height' in squre) console.log('yes'); //output yes
 
 
 
