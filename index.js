@@ -849,9 +849,19 @@ const templit = `This ${summary} ${2+6} is my
 'second' msg`;
 console.log(templit);
 
+//Date
+const now = new Date();
+const date1 = new Date('May 11 2022 9:30');
+const date2 = new Date(2022, 4, 11, 9);
 
+now.setFullYear(2017);
 
-
+console.log(now);
+console.log(now.toDateString());
+console.log(now.toTimeString());
+console.log(now.toISOString());
+console.log(date1);
+console.log(date2);
 
 
 
