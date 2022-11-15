@@ -100,4 +100,36 @@ console.log(numb);
 numb.splice(0,numb.length);
 console.log(numb);
 
+//Combining and Slicing Arrays
+const firsta = [1,2,3];
+const sec = [4,5,6];
+
+const combine = firsta.concat(sec);
+console.log(combine);
+
+//opposite of the concat is the 'slice'
+
+const slice = combine.slice(2,4); //2 = after second(2) index and 4= after 4th index
+console.log(slice);
+
+const newarray = [1,5,6,8,3,4];
+
+const sliceall = newarray.slice(2); //starting from given index.in here , index 2(include 2nd index)
+console.log(sliceall);
+
+const copy = newarray.slice(); //copy of the original array
+console.log(copy);
+
+//reference type
+
+const obarray = [{id:1}];
+const newa = [4,5,8];
+
+
+const con = obarray.concat(newa);
+obarray[0].id = 20;
+console.log(con);
+
+
+
 
