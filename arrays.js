@@ -130,6 +130,16 @@ const con = obarray.concat(newa);
 obarray[0].id = 20;
 console.log(con);
 
+//The Spread Operator
+const a = [1,2,3,4];
+const b = [3,7,6,8];
+
+const neww = [...a , ...b]; //combine two arrays 
+console.log(neww);
+
+const copy1 = [...neww];
+console.log(copy1);
+
 
 
 
