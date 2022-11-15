@@ -832,6 +832,23 @@ console.log(isEqual(name1,name2)); // properties are same
 console.log(isSame(name1,name2)); //two objects are not similar
 console.log(isSame(name1,name3)); 
 
+//Template Literals
+//String primitive
+
+const summary = "sum";
+const sentence = 'This is \n my \'first\' ' +summary + ' sentence';
+
+console.log(sentence);
+
+//Object litarels => {}
+//boolean litarels => true, true
+//String literals => '',""
+//Template literals => ``
+
+const templit = `This ${summary} ${2+6} is my 
+'second' msg`;
+console.log(templit);
+
 
 
 
