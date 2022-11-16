@@ -224,6 +224,35 @@ const filter = num3.filter(function(value){ //shorten way => const filter = num3
 
 console.log(filter);
 
+//Mapping an Array to strings
+const items = filter.map( function(value){
+    return '<li>'+value +'</li>';
+});
+
+const html = '<ul>'+items.join('')+'</ul>';
+
+console.log(items);
+console.log(html);
+
+//Mapping an Array to objects
+const items1 = filter.map(function(n){ //shorten way => const items1 = filter.map(n => ({value:n}))
+    return {value : n};
+});
+
+//display above as chainable methods
+
+//const items1 = num3.filter(value => value>=0).map(n => ({value:n}));combined two mwthods together and return result array
+const items2 = num3
+    .filter(value => value>=0)
+    .map(n => ({value:n}))
+    .filter(obj => obj.value > 5)
+    .map(obj=> obj.value); // we can call map and filter over and over because of chaining
+
+console.log(items1);
+console.log(items2);
+
+
+
 
 
 
