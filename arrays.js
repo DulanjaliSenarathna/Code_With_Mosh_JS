@@ -251,6 +251,32 @@ const items2 = num3
 console.log(items1);
 console.log(items2);
 
+//Reducing an Array
+
+//get sum of elemtnts of an array
+const number1 = [1,-2,8,9];
+
+let sum = 0;
+
+for(let n of number1)
+sum+=n;
+
+console.log(sum);
+
+//do the same thing using reduce method. reduce method have 2 parameters, one is callback function that have 2 parameters (accumulator,currentValue) and other one is initial value of accumulator (0)
+
+const sum1 = number1.reduce(function(accumulator,currentValue){
+    return accumulator+currentValue;
+},0);
+
+console.log(sum1);
+
+//we can remove second parameter of the reduce method (0), and then accumulator 1st value is the 1st element of array.
+//below is the shortened way
+
+const sum2 = number1.reduce((accumulator,currentValue)=> accumulator+currentValue);
+
+
 
 
 
