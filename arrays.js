@@ -326,6 +326,26 @@ const darray = [4,8,6,88];
 
 console.log(except(darray,[88]));
 
+//Exercise 4- Moving an Element
+
+function move(array,index,offset){
+
+    const position = index+offset;
+    if(position>array.length || position<0){
+        console.error('Invalid offset');
+        return;
+    }
+
+    const output = [...array];
+    const element = output.splice(index,1)[0];
+    output.splice(position,0,element);
+    return output;
+}
+
+const array7=[4,78,9,2,60]; //2,1 => 4,78,2,9,60
+
+console.log(move(array7,2,1));
+
 
 
 
