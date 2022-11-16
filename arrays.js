@@ -215,6 +215,15 @@ const atleastOnePositive = checknum.some(function(value){
 
 console.log(atleastOnePositive);
 
+//Filtering an Array
+const num3 = [4,8,6,-1,-2];
+
+const filter = num3.filter(function(value){ //shorten way => const filter = num3.filter(value => value>=0;)
+    return value>=0;
+});
+
+console.log(filter);
+
 
 
 
