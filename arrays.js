@@ -292,6 +292,20 @@ const newarray1 = arrayFromRange(-1,10); // if max<min, output is empty
 
 console.log(newarray1);
 
+//Exercise 2- Includes
+
+function includes(array,searchElement){
+   for(let element of array)
+    if (element == searchElement)
+        return true;
+   return false;
+
+}
+
+const n = [5,78,6,2];
+
+console.log(includes(n,8));
+
 
 
 
