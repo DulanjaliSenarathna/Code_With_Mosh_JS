@@ -195,6 +195,27 @@ courses1.sort(function(a,b){
 console.log(courses1); //when j is=n javascript word is 'lowercase', Nodejs comes first, because of ASCII character value of 'j' is lower than 'N'
 //to avoid this , we can convert both objects string part to uppercase or lower case.
 
+//Testing the Elements of an Array
+//check all the elements in a array is positive
+
+const checknum = [1,-7,6,8];
+
+const checkPositive = checknum.every(function(value){
+    return value >=0;
+});
+
+console.log(checkPositive);
+
+//check atleast one element in a array is positive 
+const checknum1= [1,-7,6,8];
+
+const atleastOnePositive = checknum.some(function(value){
+    return value >=0;
+});
+
+console.log(atleastOnePositive);
+
+
 
 
 
