@@ -150,7 +150,21 @@ for(let num of array){ // we can't get indexes
 
 array.forEach(function(num,index){ //we can get data and also and indexes
     console.log(index,num);
-})
+});
+
+//Joining Arrays
+const newar = [1,7,5,8,6];
+
+const join = newar.join(',');
+console.log(join);
+
+const messa = 'This is my string';
+const prts = messa.split(' ');
+console.log(prts); //output ['This', 'is', 'my', 'string']
+
+const joined = prts.join('-')
+console.log(joined); //This-is-my-string
+
 
 
 
