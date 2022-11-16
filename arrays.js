@@ -276,6 +276,25 @@ console.log(sum1);
 
 const sum2 = number1.reduce((accumulator,currentValue)=> accumulator+currentValue);
 
+//Array from Range
+
+function arrayFromRange(min , max){
+    const newArray = [];
+
+    for( let x = min ; x <= max; x++ ){
+      newArray.push(x);
+     
+    }
+    return newArray;
+}
+
+const newarray1 = arrayFromRange(-1,10); // if max<min, output is empty
+
+console.log(newarray1);
+
+
+
+
 
 
 
