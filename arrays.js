@@ -165,6 +165,37 @@ console.log(prts); //output ['This', 'is', 'my', 'string']
 const joined = prts.join('-')
 console.log(joined); //This-is-my-string
 
+//Sorting Arrays - for numbers and string
+const sort = [4,8,1,7,3];
+
+const s = sort.sort();
+console.log(s);
+
+//reverse sorted array
+const revers = sort.reverse();
+console.log(revers);
+
+//Sorting Arrays - for objects
+const courses1 = [
+    {id:1 , name: 'Nodejs'},
+    {id:2 , name: 'javascript'}
+];
+
+courses1.sort(function(a,b){
+
+    const nameA = a.name.toUpperCase();
+    const nameB = b.name.toUpperCase();
+
+    if (nameA < nameB) return -1;
+    if (nameA > nameB) return 1; //don't need else because of above if end with return and, if it is true executing end.
+    return 0;
+
+});
+
+console.log(courses1); //when j is=n javascript word is 'lowercase', Nodejs comes first, because of ASCII character value of 'j' is lower than 'N'
+//to avoid this , we can convert both objects string part to uppercase or lower case.
+
+
 
 
 
