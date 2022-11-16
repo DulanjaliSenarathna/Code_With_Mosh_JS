@@ -306,6 +306,26 @@ const n = [5,78,6,2];
 
 console.log(includes(n,8));
 
+//Exercise 3- Except
+
+function except(array, exclude){
+    const out = [];
+    for(let z of array){
+        for(let j of exclude){
+            if(z!==j){
+                out.push(z);
+            }
+        }
+        
+    }
+
+    return out;
+}
+
+const darray = [4,8,6,88];
+
+console.log(except(darray,[88]));
+
 
 
 
