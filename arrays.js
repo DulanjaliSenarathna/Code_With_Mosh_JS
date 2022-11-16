@@ -346,6 +346,34 @@ const array7=[4,78,9,2,60]; //2,1 => 4,78,2,9,60
 
 console.log(move(array7,2,1));
 
+//Count Occurrences - way 1
+function countOccurences(array,searchElement){
+    let count = 0;
+    for(let x of array){
+        if(x == searchElement){
+            count++;
+        }     
+    }
+    return count;
+   
+}
+const k = [4,6,8,7,6];
+console.log(countOccurences(k,6));
+
+//way - 2 using reduce function
+
+function countOccurences1(array,searchElement){
+    
+  return  array.reduce(function(accumulator,current){
+        const occurence = (searchElement==current)
+        console.log(accumulator,current,searchElement)
+        return accumulator+occurence;
+    },0);
+   
+}
+const l = [4,6,8,7,6,7,7];
+console.log(countOccurences1(l,7));
+
 
 
 
