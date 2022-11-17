@@ -158,7 +158,7 @@ const movie ={
 try{ //where the error reason
     movie.FullMovieName = '';
 }catch(e){ //display error to the user, usually use labels
-    alert(e);
+    //alert(e);
 }
 
 console.log(movie);
@@ -323,6 +323,28 @@ const circle = {
 }
 
 console.log(circle.area); //read only -> get //wrtie - set
+
+
+//Exercise 3- Error Handling
+
+try{
+    const l = [4,5,7];
+    console.log(countOccurences1(null,7));
+    } catch(e){
+      console.log(e.message);
+    }
+function countOccurences1(array,searchElement){
+
+    if(!Array.isArray(array))
+     throw new Error('Invalid array');
+    
+    return  array.reduce(function(accumulator,current){
+        const occurence = (searchElement==current)
+        console.log(accumulator,current,searchElement)
+        return accumulator+occurence;     
+      },0);  
+  }
+  
 
 
 
