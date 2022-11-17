@@ -313,6 +313,17 @@ if(items.length === 1 && Array.isArray(items[0]))
 
 console.log(sumOfArgs1([5,7,9]));
 
+//Exercise 2- Area of Circle
+
+const circle = {
+    radius : 2,
+    get area(){
+        return Math.PI* this.radius * this.radius;
+    }
+}
+
+console.log(circle.area); //read only -> get //wrtie - set
+
 
 
 
