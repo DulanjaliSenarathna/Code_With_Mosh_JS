@@ -293,6 +293,25 @@ const video4 = {
 
 video1.showTags();
 
+//Exercise 1- Sum of Arguments
+
+function sumOfArgs(...items){
+    return items.reduce((a,b)=>a+b);
+}
+
+console.log(sumOfArgs(4,8,6));
+
+//if arguments passing as array
+
+function sumOfArgs1(...items){
+
+if(items.length === 1 && Array.isArray(items[0]))
+    items = [...items[0]];
+
+    return items.reduce((a,b)=>a+b);
+}
+
+console.log(sumOfArgs1([5,7,9]));
 
 
 
