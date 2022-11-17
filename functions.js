@@ -124,13 +124,42 @@ const person ={
         return `${this.firstName} ${this.lastName}`
     } ,
     set FullName(value){
+        if(typeof value !== 'string') return;
         const parts = value.split(' '); //convert string into array and keep blank between 2 elements
         this.firstName = parts[0],
         this.lastName = parts[1]
     }
 }
 
-person.FullName = "Nisitha Athukorala";
+person.FullName = "Nisitha Athukorala"; //if we try to person.FullName = true, then output is error, because split is a string method and we can't use other types
 console.log(person);
 
+//Try and Catch
+const movie ={
+    fName : 'Anjan',
+    lName : 'Pathira',
+    get FullMovieName (){
+        return `${this.fName} ${this.lName}`
+    } ,
+    set FullMovieName(value){
+        if(typeof value !== 'string'){
+            throw new Error('Value is not a string'); //create error msg if value isn't a string
+        }
+        const parts = value.split(' ');
+
+        if(parts.length !==2){
+            throw new Error('Enter a first and last names');  //create error msg if user doesn't enter fist name or last name or both
+        }
+        this.fName = parts[0],
+        this.lName = parts[1]
+    }
+}
+
+try{ //where the error reason
+    movie.FullMovieName = '';
+}catch(e){ //display error to the user, usually use labels
+    alert(e);
+}
+
+console.log(movie);
 
