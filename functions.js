@@ -229,12 +229,69 @@ const video1 = {
         this.tags.forEach(function(tag){
             console.log(this.title , tag);
         } ,this);//without here this, output returns window object, because the callback function of the foreach method, is normal function, not a method inside a method
-        
+        //this refers video object
     }
 }
 
 video1.showTags();
 
+//Way 1 - remove 'this' argument from forEach method (don't use)
+const video2 = {
+    title : 'a',
+    tags : ['a','b','c'],
+    
+    showTags(){
+        const self = this;
+        this.tags.forEach(function(tag){
+            console.log(selt.title , tag);
+        } );
+    }
+}
+
+video1.showTags();
+
+//normal function to check call, apply and bind methods
+function playSong(a,b){
+    console.log(this);
+}
+
+playSong();// output window object
+
+playSong.call({name: 'Dul'},4,6);//output object that inside the paranthesis. Also we can pass multiple arguments if we need
+playSong.apply({name: 'Dul'},[1,2]);//same as above, but difference is we need to pass arguments as an array
+playSong.bind({name:'Dul'})(); //doesn't call playSong function, but returns new function and point to this object permently 
+
+//Way -2 using bind method
+
+const video3 = {
+    title : 'a',
+    tags : ['a','b','c'],
+    
+    showTags(){
+        
+        this.tags.forEach(function(tag){
+            console.log(this.title , tag);
+        } .bind(this)); // in here this is refence to video3 object.
+    }
+}
+
+video1.showTags();
+
+//Way -3 using arrow function's inheritance
+
+const video4 = {
+    title : 'a',
+    tags : ['a','b','c'],
+    
+    showTags(){
+        
+        this.tags.forEach(tag=>{ //arrow functions inherit 'this' from the containing function
+            console.log(this.title , tag);
+        }); // in here this is refence to video3 object.
+    }
+}
+
+video1.showTags();
 
 
 
