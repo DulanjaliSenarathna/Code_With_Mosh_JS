@@ -61,4 +61,25 @@ console.log(sum(1,8,9,6));//output 9 because first 2 argument only used
   }
   return total;
 }
-console.log(sum1(1,2,9,6));//output 9 because first 2 argument only used
+console.log(sum1(1,2,9,6));
+
+//The Rest Operator
+function sum2(...args){ // ... = rest operator => take all arguments and put them in an array. without rest operator, output will be 5 (because function get first value)
+    console.log(args);
+}
+
+sum2(5,7,6,9); //output => [5,7,6,9]
+
+//calculate sum of arguments using rest operator and reduce method
+function sum4(...args1){ return args1.reduce((a, b) => a+b);}
+
+console.log(sum4(5,7,6,9));
+
+//modify above to shopping cart implimentation
+
+function sumCart(discount, ...prices){ // we can't add parameters after the rest parameter (rest = rest of the parameters)
+    const total = prices.reduce((a,b)=> a+b);
+    return total * (1-discount);
+}
+
+console.log(sumCart(0.1,20,30));

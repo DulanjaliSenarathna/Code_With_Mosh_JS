@@ -377,7 +377,7 @@ console.log(countOccurences1(l,7));
 //Exercise 6- Get Max - Way 1 (using Math.max())
 
 function getMax(array) {
-   const max = Math.max(...array);
+   const max = Math.max(...array);//spread operator - taking individual elemnts from array
    return max;
 }
 
