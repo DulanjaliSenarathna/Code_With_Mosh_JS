@@ -1,7 +1,7 @@
 console.log('Hello');
 
-let name = "Dul";
-console.log(name);
+let namew = "Dul";
+console.log(namew);
 
 //can't start with a number
 //souldn't be include spaces or - 
@@ -23,7 +23,6 @@ let isTrue = true; //boolean literal
 let cityName; //undefined (default) 
 let address = undefined; //undefined
 let phone = null; //null
-
 
 //objects
 let person = {
