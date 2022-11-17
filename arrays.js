@@ -18,7 +18,7 @@ console.log(numbers.indexOf(15)); //when try to find the number which are not in
 console.log(numbers.indexOf(1,2)) ;// in this 1 = the number which is we should find the index, 2 = search starting index
 console.log(numbers.lastIndexOf(1));
 console.log(numbers.indexOf(1) !== -1);
-console.log(numbers.includes(1));//simlest way to above 
+console.log(numbers.includes(1));//similar way to above 
 
 //Finding Elements (Reference Types)
 
@@ -420,6 +420,23 @@ function getMax2(array1) {
  }
 
  console.log(getMax2([789,99]));
+
+ ///Exercise 7- Movies
+
+ const movies = [
+    {title: 'a', year: 2018, rating: 4.5},
+    {title: 'b', year: 2018, rating: 4.7},
+    {title: 'c', year: 2018, rating: 3},
+    {title: 'd', year: 2017, rating: 4.5}
+ ];
+
+ const titlee = movies
+    .filter(movie => movie.year === 2018 && movie.rating >= 4)
+    .sort((a,b)=> a.rating - b.rating)
+    .reverse()
+    .map(movie=> movie.title);
+
+ console.log(titlee);
 
 
 
