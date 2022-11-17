@@ -163,3 +163,14 @@ try{ //where the error reason
 
 console.log(movie);
 
+//Local vs Global Scope
+const color = 'red'; //globally declared - accessibale anywhere 
+
+function start(){
+    const message = 'hi';
+    const color = 'blue'; 
+    console.log(color);   
+}
+
+start();//output blue.
+//console.log(message);//can't access message constant outside of the scope
