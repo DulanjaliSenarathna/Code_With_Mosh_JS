@@ -174,3 +174,23 @@ function start(){
 
 start();//output blue.
 //console.log(message);//can't access message constant outside of the scope
+
+//Let vs Var
+function start1(){
+    for(let i=0; i<5; i++){
+        console.log(i);
+    }
+
+    console.log(i);//unaccessible outside of the scopeof i when i declared as 'let'. but if i declared as var, i accessible in here
+}
+
+console.log(i); // even though i declared as var , can't accessible in here
+
+//var => function scoped, attached variable to window object => var color = 'red'; and now in console => window.color => output red
+//let => block scoped , not attached variable to window object
+
+start1();
+
+
+
+
