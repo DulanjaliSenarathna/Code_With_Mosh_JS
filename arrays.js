@@ -374,6 +374,57 @@ function countOccurences1(array,searchElement){
 const l = [4,6,8,7,6,7,7];
 console.log(countOccurences1(l,7));
 
+//Exercise 6- Get Max - Way 1 (using Math.max())
+
+function getMax(array) {
+   const max = Math.max(...array);
+   return max;
+}
+
+const arr = [4,7,100];
+console.log(getMax(arr));
+
+//way - 2 
+
+function getMax2(array1) {
+    if (array1.length ===0) return undefined;
+    let max = array1[0];
+
+    for(let j=1 ; j<array1.length;j++){
+        if(array[j]>max){
+            max = array1[j]; 
+        }
+    }
+    return max;
+ }
+ 
+ 
+ console.log(getMax2([7,99]));
+
+ // way -3
+
+ function getMax3(array2) {
+    if (array2.length ===0) return undefined;
+
+    array2.reduce(function(accumulator,current){
+       
+        if(accumulator>current){
+           return accumulator;
+        }
+        else{
+            return current;
+        }
+        //return(accumulator<current) ? current : accumulator
+    });
+
+ }
+
+ console.log(getMax2([789,99]));
+
+
+
+
+
 
 
 
