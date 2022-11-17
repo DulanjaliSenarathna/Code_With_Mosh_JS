@@ -22,3 +22,19 @@ const bring = function catchi(){
 }
 
 bring();
+
+//Hoisting
+sleep(); // output 'sleep' because of the hoisting. 
+
+function sleep(){
+    console.log('sleep');
+}
+
+write(); //getting error , because we can't call method in function expression before it declared
+
+const write = function(){
+    console.log('write');
+};
+
+console.log(x); //also getting error because this is expression.
+let x = 4;
