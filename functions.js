@@ -181,15 +181,61 @@ function start1(){
         console.log(i);
     }
 
-    console.log(i);//unaccessible outside of the scopeof i when i declared as 'let'. but if i declared as var, i accessible in here
+   // console.log(i);//unaccessible outside of the scopeof i when i declared as 'let'. but if i declared as var, i accessible in here
 }
 
-console.log(i); // even though i declared as var , can't accessible in here
+// console.log(i); // even though i declared as var , can't accessible in here
 
 //var => function scoped, attached variable to window object => var color = 'red'; and now in console => window.color => output red
 //let => block scoped , not attached variable to window object
 
 start1();
+
+//The this Keyword
+
+//method => object itself
+//function => global object (window object in browser and global in node)
+
+//this keyword in method
+const video = {
+    title : 'a',
+    play(){
+        console.log(this);
+    }
+}
+
+video.play();
+
+//this keyword in function
+function playVideo(){
+    console.log(this); 
+}
+
+playVideo(); //output => window object (default)
+
+//in Video constructor
+
+function Video(title){
+this.title = title;
+console.log(this);
+}
+
+const v = new Video('titlee');//if call a function using a new operator, (in this case constructor function)'this' will reference a new empty object
+
+const video1 = {
+    title : 'a',
+    tags : ['a','b','c'],
+    showTags(){
+        this.tags.forEach(function(tag){
+            console.log(this.title , tag);
+        } ,this);//without here this, output returns window object, because the callback function of the foreach method, is normal function, not a method inside a method
+        
+    }
+}
+
+video1.showTags();
+
+
 
 
 
