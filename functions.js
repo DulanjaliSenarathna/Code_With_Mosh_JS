@@ -83,3 +83,36 @@ function sumCart(discount, ...prices){ // we can't add parameters after the rest
 }
 
 console.log(sumCart(0.1,20,30));
+
+//Default Parameters
+
+function interest(principal, rate, years){
+    return principal*rate / 100*years;
+}
+
+console.log(interest(1000,0.2,5));
+
+//same function above without parsing default parameters
+function interest1(principal, rate, years){
+     rate = rate || 0.2; //set default value if not function passing parameter
+     years = years || 5;
+    return principal * rate / 100 * years;
+}
+
+console.log(interest1(10000));
+
+//same function above with parsing default values as function parameters
+function interest2(principal, rate=0.2, years=5){
+   return principal * rate / 100 * years;
+}
+
+console.log(interest2(10000));
+
+function interest3(principal, rate=0.2, years){ //if we want to give default value only one , then we need to pass the value for other parameter when function calling
+    return principal * rate / 100 * years;
+ }
+ 
+ console.log(interest3(10000, undefined, 5)); //in here we need to set undefined to default parameter, if not output will 'NaN'
+//but this is ugly, best practise is the write default parameters last. => function interest3(principal, years, rate=0.2) like this and no need to add undefined to when calling method
+
+
