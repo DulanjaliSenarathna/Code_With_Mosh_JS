@@ -115,4 +115,22 @@ function interest3(principal, rate=0.2, years){ //if we want to give default val
  console.log(interest3(10000, undefined, 5)); //in here we need to set undefined to default parameter, if not output will 'NaN'
 //but this is ugly, best practise is the write default parameters last. => function interest3(principal, years, rate=0.2) like this and no need to add undefined to when calling method
 
+//Getters and Setters
+
+const person ={
+    firstName : 'Dulanjali',
+    lastName : 'Senarathna',
+    get FullName (){
+        return `${this.firstName} ${this.lastName}`
+    } ,
+    set FullName(value){
+        const parts = value.split(' '); //convert string into array and keep blank between 2 elements
+        this.firstName = parts[0],
+        this.lastName = parts[1]
+    }
+}
+
+person.FullName = "Nisitha Athukorala";
+console.log(person);
+
 
